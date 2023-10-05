@@ -1,0 +1,12 @@
+<script>
+    //Problema: Peça para o usuário informar um número inteiro.
+    //Escreva todos os números na tela, até o número informado pelo usuário, colocando um número em cada linha e começando do número 1!
+
+    const num = Number(prompt("Informe um número inteiro.").trim());
+    const numArray = [];
+    for (let i = 1; i < num; i++) {
+        numArray.push(i);
+    }
+    document.write(`${numArray.join(", ")}, ${num}`);
+
+</script>

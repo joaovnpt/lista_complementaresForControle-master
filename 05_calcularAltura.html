@@ -1,0 +1,17 @@
+<script>
+    //PROBLEMA
+    /*
+    Desenvolva um programa que pergunte ao usuário a quantidade de pessoas que terão sua medida informada.
+    Após, calcule e apresente os seguintes dados:
+    - Menor altura 
+    - Maior altura
+    */
+    
+    const qtdPessoas = Number(prompt("Informe quantas pessoas terão sua medida informada?").trim());
+    let alturas = [];
+    for (let i = 1; i < qtdPessoas; i++) {
+        alturas.push(Number((prompt(`Qual é a altura da pessoa ${i} de ${qtdPessoas}?`).replace("." , ","))));
+
+    }
+
+</script>
