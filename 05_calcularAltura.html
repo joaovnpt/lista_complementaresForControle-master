@@ -11,7 +11,10 @@
     let alturas = [];
     for (let i = 1; i < qtdPessoas; i++) {
         alturas.push(Number((prompt(`Qual é a altura da pessoa ${i} de ${qtdPessoas}?`).replace("." , ","))));
-
     }
+    let alturamin = Math.min(alturas);
+    let alturamax = Math.max(alturas);
+    let somaalturas = alturas.reduce((soma, alturas) => soma + alturas, 0);
+    let mediaalturas = alturas.reduce((soma, alturas) => soma + alturas, 0) / alturas.length();
 
 </script>
